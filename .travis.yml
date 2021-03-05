@@ -8,6 +8,7 @@ before_install:
   - pip install coverage
   - pip install coveralls
 script:
+  - python -m unittest test_cc.py
   - coverage run -m pytest test_cc.py
   - coverage report -m
 after_install: 
